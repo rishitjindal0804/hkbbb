@@ -59,7 +59,7 @@ function setup() {
   gameOver.visible = false;
   restart.visible = false;
   
-  invisibleGround = createSprite(width-650,height-500,400,20);
+  invisibleGround = createSprite(width,height-520,400,20);
   invisibleGround.visible = false;
   
   cloudsGroup = new Group();
@@ -146,7 +146,7 @@ function spawnClouds() {
 
 function spawnObstacles() {
   if(frameCount % 60 === 0) {
-    var obstacle = createSprite(600,165,10,40);
+    var obstacle = createSprite(600,height-520,10,40);
     //obstacle.debug = true;
     obstacle.velocityX = -(6 + 3*score/100);
     
